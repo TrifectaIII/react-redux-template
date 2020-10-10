@@ -1,3 +1,9 @@
+# react-redux-template
+
+My personalized starting point for react-redux projects. 
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
