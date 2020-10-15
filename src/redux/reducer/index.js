@@ -1,5 +1,5 @@
 import {combineReducers} from 'redux'
-import placeholder from './placeholder'
+import reducer from './reducer'
 
 export default combineReducers({
     placeholder,

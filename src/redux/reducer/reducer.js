@@ -1,7 +1,7 @@
 import {PLACEHOLDER_ACTION} from '../actionTypes';
 
 const initialState = {
-
+    
 }
 
 export default function (state=initialState, action) {
