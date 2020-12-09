@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
+
+import './index.css';
 
 //for allowing store access across all components
 import {Provider} from 'react-redux';
@@ -10,11 +10,16 @@ import {Provider} from 'react-redux';
 //access redux store
 import store from './redux/store';
 
-ReactDOM.render(
+//import main app component
+import App from './App';
 
-    <Provider store={store}>
-        <App />
-    </Provider>,
+ReactDOM.render(
+    
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>,
     
     document.getElementById('root')
 );

@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import reducer from './reducer'
+import placeholderReducer from './placeholderReducer'
 
 export default combineReducers({
-    reducer,
+    placeholderReducer,
 })

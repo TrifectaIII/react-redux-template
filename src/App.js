@@ -1,17 +1,26 @@
-import React from 'react';
-import './App.css';
+import * as React from 'react';
 import {connect} from 'react-redux';
 
-//import component
-import Component from './components/Component';
+import './App.css';
 
-function App() {
-  return (
-    <div>
-        <h1>React-Redux Template</h1>
-        <Component/>
-    </div>
-  );
+//import component
+import PlaceholderComponent from './components/PlaceholderComponent';
+
+class App extends React.Component {
+
+    // constructor (props) {
+    //     super (props);
+    // }
+  
+    render = () =>  {
+        return (
+        <div>
+            <h1>React-Redux Template</h1>
+            <PlaceholderComponent/>
+        </div>
+        );
+    }
+
 }
 
 const mapStateToProps = (state, ownProps) => {
